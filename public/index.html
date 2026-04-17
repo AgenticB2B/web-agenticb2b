@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>AgenticB2B | Agentic Intelligence for Indian MSMEs</title>
+<title>AgenticB2B | AI Agents for Indian Industrial Businesses</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;0,800;1,400&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
@@ -72,7 +72,7 @@ html { scroll-behavior: smooth; }
 <body class="bg-surface font-body text-on-surface antialiased">
 
 <!-- ═══════════════════════ TOP NAV ═══════════════════════ -->
-<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-6 md:px-12 h-16 bg-[#fbf9f6]/90 backdrop-blur-md border-b border-outline-variant/10">
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-5 md:px-12 h-16 bg-[#fbf9f6]/90 backdrop-blur-md border-b border-outline-variant/10">
   <div class="flex items-center gap-3">
     <div class="w-8 h-8 bg-primary rounded-sm flex items-center justify-center">
       <span class="material-symbols-outlined filled text-on-primary text-sm">hub</span>
@@ -80,291 +80,152 @@ html { scroll-behavior: smooth; }
     <span class="text-lg font-headline font-bold text-primary">AgenticB2B</span>
   </div>
   <div class="hidden md:flex items-center gap-8">
-    <a href="#solutions" class="text-secondary text-sm font-medium hover:text-primary transition-colors">Solutions</a>
+    <a href="#what-we-fix" class="text-secondary text-sm font-medium hover:text-primary transition-colors">What We Fix</a>
     <a href="#how" class="text-secondary text-sm font-medium hover:text-primary transition-colors">How It Works</a>
-    <a href="#proof" class="text-secondary text-sm font-medium hover:text-primary transition-colors">Results</a>
-    <a href="#cta" class="bg-primary text-on-primary px-5 py-2 text-xs font-bold uppercase tracking-widest hover:opacity-90 transition-opacity">Get Early Access</a>
+    <a href="https://cal.com/sai-yashwanth/15min" target="_blank" class="bg-primary text-on-primary px-5 py-2 text-xs font-bold uppercase tracking-widest hover:opacity-90 transition-opacity">Book a Call</a>
   </div>
-  <button class="md:hidden material-symbols-outlined text-primary" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">menu</button>
+  <button class="md:hidden material-symbols-outlined text-primary text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">menu</button>
 </nav>
 
 <!-- Mobile Menu -->
 <div id="mobile-menu" class="hidden fixed top-16 left-0 right-0 bg-surface z-40 p-6 border-b border-outline-variant/20 md:hidden">
-  <div class="flex flex-col gap-4">
-    <a href="#solutions" class="text-primary font-medium" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Solutions</a>
-    <a href="#how" class="text-primary font-medium" onclick="document.getElementById('mobile-menu').classList.add('hidden')">How It Works</a>
-    <a href="#proof" class="text-primary font-medium" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Results</a>
-    <a href="#cta" class="bg-primary text-on-primary px-5 py-3 text-xs font-bold uppercase tracking-widest text-center" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Get Early Access</a>
+  <div class="flex flex-col gap-5">
+    <a href="#what-we-fix" class="text-primary font-medium text-base" onclick="document.getElementById('mobile-menu').classList.add('hidden')">What We Fix</a>
+    <a href="#how" class="text-primary font-medium text-base" onclick="document.getElementById('mobile-menu').classList.add('hidden')">How It Works</a>
+    <a href="https://cal.com/sai-yashwanth/15min" target="_blank" class="bg-primary text-on-primary px-5 py-3 text-xs font-bold uppercase tracking-widest text-center" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Book a Call</a>
   </div>
 </div>
 
 
 <!-- ═══════════════════════ HERO ═══════════════════════ -->
 <section class="relative min-h-screen flex items-center overflow-hidden">
-  <!-- Blueprint grid background -->
   <div class="absolute inset-0 blueprint-grid opacity-20 pointer-events-none"></div>
 
-  <!-- Decorative architecture panel -->
   <div class="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-[38%] h-[65%] border-l border-t border-outline-variant/30 bg-surface-container-low">
     <div class="absolute inset-8 border border-dashed border-outline-variant/40 flex items-center justify-center">
       <div class="text-center opacity-40">
         <span class="material-symbols-outlined text-[100px] text-primary/30">precision_manufacturing</span>
-        <div class="mt-4 font-mono text-[9px] text-outline tracking-widest uppercase">Manufacturing Intelligence Module</div>
+        <div class="mt-4 font-mono text-[9px] text-outline tracking-widest uppercase">Industrial Intelligence Layer</div>
       </div>
     </div>
-    <!-- Floating spec labels -->
     <div class="absolute top-6 left-6 bg-primary px-2 py-0.5">
-      <span class="text-[9px] font-mono text-white tracking-widest">SPEC: AI-CORE-V2</span>
+      <span class="text-[9px] font-mono text-white tracking-widest">EARLY PARTNERS — 2025</span>
     </div>
     <div class="absolute bottom-6 right-6 text-right">
-      <span class="text-[9px] font-mono text-outline tracking-widest">UNIT 01 / PUNE</span>
+      <span class="text-[9px] font-mono text-outline tracking-widest">INDIA / INDUSTRIAL SMB</span>
     </div>
   </div>
 
-  <div class="relative z-10 px-6 md:px-12 lg:px-20 max-w-3xl pt-32 pb-20">
+  <div class="relative z-10 px-5 md:px-12 lg:px-20 max-w-3xl pt-28 pb-16 md:pt-32 md:pb-20">
     <div class="inline-flex items-center gap-3 mb-8 bg-primary px-3 py-1 fade-up">
       <span class="w-1.5 h-1.5 rounded-full bg-on-primary-container animate-pulse"></span>
-      <span class="text-[10px] uppercase tracking-[0.2em] text-white font-bold">Now accepting early partners</span>
+      <span class="text-[10px] uppercase tracking-[0.2em] text-white font-bold">Looking for early partners</span>
     </div>
 
-    <h1 class="font-headline text-5xl md:text-6xl lg:text-7xl text-primary leading-[1.05] tracking-tight mb-8 fade-up fade-up-d1">
-      Agentic Intelligence for Indian MSMEs
+    <h1 class="font-headline text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-primary leading-[1.05] tracking-tight mb-6 fade-up fade-up-d1">
+      We build AI agents for Indian industrial businesses.
     </h1>
 
-    <p class="font-body text-xl md:text-2xl text-secondary leading-relaxed mb-12 max-w-xl fade-up fade-up-d2">
-      Your back-office runs itself. Your marketing finds leads while you sleep. Your shop-floor predicts before it breaks.
+    <p class="font-body text-lg md:text-xl text-secondary leading-relaxed mb-10 max-w-xl fade-up fade-up-d2">
+      Your operations run on WhatsApp, email, and memory. We come in, understand how your business works, and build the automation layer that ties it all together.
     </p>
 
-    <div class="flex flex-wrap gap-4 fade-up fade-up-d3">
-      <a href="#cta" class="bg-primary text-white px-8 py-4 text-sm font-bold uppercase tracking-wider rounded-sm hover:translate-y-[-2px] transition-transform active:translate-y-0 shadow-lg shadow-primary/10">
-        Get Early Access
+    <div class="flex flex-col sm:flex-row gap-4 fade-up fade-up-d3">
+      <a href="https://cal.com/sai-yashwanth/15min" target="_blank" class="bg-primary text-white px-8 py-4 text-sm font-bold uppercase tracking-wider rounded-sm hover:translate-y-[-2px] transition-transform active:translate-y-0 shadow-lg shadow-primary/10 text-center">
+        Book a Call
       </a>
-      <a href="#solutions" class="border border-outline text-primary px-8 py-4 text-sm font-bold uppercase tracking-wider rounded-sm hover:bg-surface-container-low transition-colors">
-        Explore Solutions
+      <a href="#what-we-fix" class="border border-outline text-primary px-8 py-4 text-sm font-bold uppercase tracking-wider rounded-sm hover:bg-surface-container-low transition-colors text-center">
+        What We Fix
       </a>
-    </div>
-
-    <!-- Trust strip -->
-    <div class="mt-16 pt-8 border-t border-outline-variant/20 fade-up fade-up-d4">
-      <p class="text-[10px] uppercase tracking-[0.15em] text-outline font-bold mb-4">Built for Indian Manufacturing</p>
-      <div class="flex gap-8 items-center">
-        <div><span class="font-headline text-2xl text-primary font-bold">99.8%</span><span class="text-[10px] text-secondary ml-2 uppercase font-bold">Accuracy</span></div>
-        <div class="w-px h-6 bg-outline-variant/30"></div>
-        <div><span class="font-headline text-2xl text-primary font-bold">24/7</span><span class="text-[10px] text-secondary ml-2 uppercase font-bold">Autonomous</span></div>
-        <div class="w-px h-6 bg-outline-variant/30"></div>
-        <div><span class="font-headline text-2xl text-primary font-bold">45%</span><span class="text-[10px] text-secondary ml-2 uppercase font-bold">Cost Reduction</span></div>
-      </div>
     </div>
   </div>
 </section>
 
 
-<!-- ═══════════════════════ SOLUTIONS ═══════════════════════ -->
-<section id="solutions" class="px-6 md:px-12 lg:px-20 py-24 bg-surface-container-low">
-  <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-    <div>
-      <div class="inline-block bg-primary px-2 py-0.5 mb-4">
-        <span class="text-[10px] font-mono text-white tracking-widest">SECTION 02 / SOLUTIONS</span>
-      </div>
-      <h2 class="font-headline text-3xl md:text-4xl text-primary mb-3">Core Orchestration Layers</h2>
-      <p class="text-secondary max-w-lg">Autonomous agents designed for the unique complexities of Indian procurement, production, and distribution.</p>
+<!-- ═══════════════════════ WHAT WE FIX ═══════════════════════ -->
+<section id="what-we-fix" class="px-5 md:px-12 lg:px-20 py-20 md:py-24 bg-surface-container-low">
+  <div class="mb-12 md:mb-16">
+    <div class="inline-block bg-primary px-2 py-0.5 mb-4">
+      <span class="text-[10px] font-mono text-white tracking-widest">SECTION 02 / WHAT WE FIX</span>
+    </div>
+    <h2 class="font-headline text-3xl md:text-4xl text-primary mb-3">The problems we solve</h2>
+    <p class="text-secondary max-w-lg text-sm md:text-base">Most industrial SMBs run on tools that don't talk to each other. Here's what that looks like in practice.</p>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+    <div class="bg-surface p-6 md:p-8 rounded-sm shadow-sm border-t-2 border-on-primary-container">
+      <span class="material-symbols-outlined text-on-primary-container text-3xl mb-4 block">device_hub</span>
+      <h3 class="font-headline text-lg text-primary mb-3">Disconnected tools</h3>
+      <p class="text-secondary text-sm leading-relaxed">Your business runs across 4–5 software that don't talk to each other. No single view of what's happening.</p>
+    </div>
+
+    <div class="bg-surface p-6 md:p-8 rounded-sm shadow-sm border-t-2 border-on-primary-container">
+      <span class="material-symbols-outlined text-on-primary-container text-3xl mb-4 block">sync_problem</span>
+      <h3 class="font-headline text-lg text-primary mb-3">Data never reconciled</h3>
+      <p class="text-secondary text-sm leading-relaxed">Numbers in Excel don't match the ERP. Someone manually copies data between systems every day.</p>
+    </div>
+
+    <div class="bg-surface p-6 md:p-8 rounded-sm shadow-sm border-t-2 border-on-primary-container">
+      <span class="material-symbols-outlined text-on-primary-container text-3xl mb-4 block">construction</span>
+      <h3 class="font-headline text-lg text-primary mb-3">ERP that doesn't fit</h3>
+      <p class="text-secondary text-sm leading-relaxed">Either you don't have one, it's mid-migration, or it works for 80% of your operations and breaks on the rest.</p>
+    </div>
+
+    <div class="bg-surface p-6 md:p-8 rounded-sm shadow-sm border-t-2 border-on-primary-container">
+      <span class="material-symbols-outlined text-on-primary-container text-3xl mb-4 block">extension_off</span>
+      <h3 class="font-headline text-lg text-primary mb-3">No custom features</h3>
+      <p class="text-secondary text-sm leading-relaxed">Third-party tools almost fit your workflow — but that one thing you actually need isn't available.</p>
     </div>
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
-    <!-- Back-office -->
-    <div class="md:col-span-7 bg-surface p-8 md:p-10 rounded-sm shadow-sm hover:shadow-md transition-shadow group">
-      <div class="flex items-start justify-between mb-6">
-        <span class="material-symbols-outlined text-on-primary-container text-4xl">business_center</span>
-        <span class="text-[9px] font-mono text-outline">AGENT_01</span>
-      </div>
-      <h3 class="font-headline text-2xl text-primary mb-4">Back-office Admin</h3>
-      <p class="text-secondary mb-8 leading-relaxed max-w-md">Automate GST compliance, reconciliation, and vendor communication. Our agents handle the paperwork while you handle the strategy.</p>
-      <div class="space-y-3">
-        <div class="flex items-center gap-4 p-4 bg-surface-container-low rounded-sm">
-          <span class="material-symbols-outlined text-sm text-on-primary-container">check_circle</span>
-          <span class="text-xs font-bold uppercase tracking-wider">Automated Ledger Reconciliation</span>
-        </div>
-        <div class="flex items-center gap-4 p-4 bg-surface-container-low rounded-sm">
-          <span class="material-symbols-outlined text-sm text-on-primary-container">check_circle</span>
-          <span class="text-xs font-bold uppercase tracking-wider">Smart Document Extraction</span>
-        </div>
-        <div class="flex items-center gap-4 p-4 bg-surface-container-low rounded-sm">
-          <span class="material-symbols-outlined text-sm text-on-primary-container">check_circle</span>
-          <span class="text-xs font-bold uppercase tracking-wider">Vendor Payment Orchestration</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Manufacturing Deep-Tech -->
-    <div class="md:col-span-5 bg-primary text-white p-8 md:p-10 rounded-sm flex flex-col justify-between">
-      <div>
-        <div class="flex items-start justify-between mb-6">
-          <span class="material-symbols-outlined text-on-primary-container text-4xl">factory</span>
-          <span class="text-[9px] font-mono text-white/40">AGENT_02</span>
-        </div>
-        <h3 class="font-headline text-2xl mb-4">Manufacturing Tech</h3>
-        <p class="text-white/60 text-sm leading-relaxed mb-8">Predictive maintenance and shop-floor optimization using custom-trained models for industrial hardware interfaces.</p>
-      </div>
-      <div class="aspect-[16/9] bg-primary-container rounded-sm overflow-hidden flex items-center justify-center relative">
-        <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 16px 16px;"></div>
-        <span class="material-symbols-outlined text-[60px] text-on-primary-container/30">precision_manufacturing</span>
-      </div>
-    </div>
-
-    <!-- Marketing -->
-    <div class="md:col-span-5 bg-secondary-container p-8 md:p-10 rounded-sm">
-      <div class="flex items-start justify-between mb-6">
-        <span class="material-symbols-outlined text-primary text-4xl">campaign</span>
-        <span class="text-[9px] font-mono text-on-secondary-container/50">AGENT_03</span>
-      </div>
-      <h3 class="font-headline text-2xl text-primary mb-4">Marketing Automation</h3>
-      <p class="text-on-secondary-container text-sm leading-relaxed mb-8">B2B lead generation and nurturing tailored for the Indian supply chain ecosystem. Personalized outreach at scale.</p>
-      <a href="#cta" class="text-primary font-bold text-xs uppercase tracking-widest flex items-center gap-2 hover:gap-3 transition-all">
-        Explore Agents <span class="material-symbols-outlined text-sm">arrow_forward</span>
-      </a>
-    </div>
-
-    <!-- Stats row -->
-    <div class="md:col-span-7 bg-surface p-8 md:p-10 rounded-sm border border-outline-variant/10 flex items-center">
-      <div class="w-full grid grid-cols-2 md:grid-cols-4 gap-8">
-        <div class="text-center">
-          <div class="font-headline text-3xl text-primary mb-1">14</div>
-          <div class="text-[10px] uppercase font-bold text-secondary tracking-wider">Agent Types</div>
-        </div>
-        <div class="text-center">
-          <div class="font-headline text-3xl text-primary mb-1">24/7</div>
-          <div class="text-[10px] uppercase font-bold text-secondary tracking-wider">Operation</div>
-        </div>
-        <div class="text-center">
-          <div class="font-headline text-3xl text-primary mb-1">45%</div>
-          <div class="text-[10px] uppercase font-bold text-secondary tracking-wider">Cost Reduction</div>
-        </div>
-        <div class="text-center">
-          <div class="font-headline text-3xl text-primary mb-1">3 Clicks</div>
-          <div class="text-[10px] uppercase font-bold text-secondary tracking-wider">To Deploy</div>
-        </div>
-      </div>
+  <div class="mt-10 md:mt-12 p-6 md:p-10 bg-primary text-white rounded-sm">
+    <div class="max-w-2xl">
+      <p class="font-headline text-xl md:text-2xl mb-3">What we do about it</p>
+      <p class="text-white/70 leading-relaxed text-sm md:text-base">We don't sell you another software. We come in, map your operations end to end, and build agents and automations that work with what you already have — so your systems finally talk to each other.</p>
     </div>
   </div>
 </section>
 
 
 <!-- ═══════════════════════ HOW IT WORKS ═══════════════════════ -->
-<section id="how" class="px-6 md:px-12 lg:px-20 py-24 bg-surface">
-  <div class="mb-16">
+<section id="how" class="px-5 md:px-12 lg:px-20 py-20 md:py-24 bg-surface">
+  <div class="mb-12 md:mb-16">
     <div class="inline-block bg-primary px-2 py-0.5 mb-4">
-      <span class="text-[10px] font-mono text-white tracking-widest">SECTION 03 / WORKFLOW</span>
+      <span class="text-[10px] font-mono text-white tracking-widest">SECTION 03 / PROCESS</span>
     </div>
-    <h2 class="font-headline text-3xl md:text-4xl text-primary mb-3">How Agents Work</h2>
-    <p class="text-secondary max-w-lg">From trigger to execution — autonomous workflows that handle the complexity so you don't have to.</p>
+    <h2 class="font-headline text-3xl md:text-4xl text-primary mb-3">How it works</h2>
+    <p class="text-secondary max-w-lg text-sm md:text-base">Simple engagement, no fluff.</p>
   </div>
 
-  <!-- Workflow visualization -->
-  <div class="bg-surface-container-low p-6 md:p-10 relative overflow-hidden border-l-2 border-primary-container">
+  <div class="bg-surface-container-low p-5 md:p-10 border-l-2 border-primary-container relative overflow-hidden">
     <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(#001334 1px, transparent 1px); background-size: 20px 20px;"></div>
 
-    <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
-      <!-- Step 1: Trigger -->
-      <div>
-        <div class="bg-white p-6 shadow-sm border-t-4 border-on-primary-container mb-4">
-          <div class="flex justify-between items-start mb-4">
-            <span class="material-symbols-outlined text-secondary">input</span>
-            <span class="text-[9px] font-bold text-on-primary-container bg-primary-fixed px-2 py-0.5">01 — TRIGGER</span>
-          </div>
-          <h4 class="text-sm font-bold text-primary mb-2">Event Detection</h4>
-          <p class="text-xs text-secondary leading-relaxed">An order arrives, a machine vibrates abnormally, or a vendor invoice lands in your inbox. Agents detect it instantly.</p>
+    <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10">
+      <div class="bg-white p-6 shadow-sm border-t-4 border-on-primary-container">
+        <div class="flex justify-between items-start mb-4">
+          <span class="material-symbols-outlined text-secondary">forum</span>
+          <span class="text-[9px] font-bold text-on-primary-container bg-primary-fixed px-2 py-0.5">01 — TALK</span>
         </div>
-        <div class="hidden md:flex justify-center text-outline-variant">
-          <span class="material-symbols-outlined">arrow_downward</span>
-        </div>
+        <h4 class="text-sm font-bold text-primary mb-2">We understand your operations</h4>
+        <p class="text-xs text-secondary leading-relaxed">A 30-minute call. We ask about your workflow, your tools, where things break down. No pitch deck.</p>
       </div>
 
-      <!-- Step 2: Process -->
-      <div>
-        <div class="bg-white p-6 shadow-sm border-t-4 border-primary mb-4">
-          <div class="flex justify-between items-start mb-4">
-            <span class="material-symbols-outlined text-secondary">psychology</span>
-            <span class="text-[9px] font-bold text-primary bg-surface-variant px-2 py-0.5">02 — PROCESS</span>
-          </div>
-          <h4 class="text-sm font-bold text-primary mb-2">Intelligent Orchestration</h4>
-          <p class="text-xs text-secondary leading-relaxed">Multiple agents collaborate — verifying inventory, generating invoices, checking compliance — all without human intervention.</p>
+      <div class="bg-white p-6 shadow-sm border-t-4 border-primary">
+        <div class="flex justify-between items-start mb-4">
+          <span class="material-symbols-outlined text-secondary">map</span>
+          <span class="text-[9px] font-bold text-primary bg-surface-variant px-2 py-0.5">02 — MAP</span>
         </div>
-        <div class="hidden md:flex justify-center text-outline-variant">
-          <span class="material-symbols-outlined">arrow_downward</span>
-        </div>
+        <h4 class="text-sm font-bold text-primary mb-2">We map and propose</h4>
+        <p class="text-xs text-secondary leading-relaxed">We document your current ops, identify what can be automated, and come back with a concrete plan and scope.</p>
       </div>
 
-      <!-- Step 3: Execute -->
-      <div>
-        <div class="bg-white p-6 shadow-sm border-t-4 border-green-600 mb-4">
-          <div class="flex justify-between items-start mb-4">
-            <span class="material-symbols-outlined text-secondary">task_alt</span>
-            <span class="text-[9px] font-bold text-green-700 bg-green-50 px-2 py-0.5">03 — EXECUTE</span>
-          </div>
-          <h4 class="text-sm font-bold text-primary mb-2">Autonomous Action</h4>
-          <p class="text-xs text-secondary leading-relaxed">Shipping manifests are generated, maintenance is scheduled, campaigns are deployed. You review outcomes, not processes.</p>
+      <div class="bg-white p-6 shadow-sm border-t-4 border-green-600">
+        <div class="flex justify-between items-start mb-4">
+          <span class="material-symbols-outlined text-secondary">rocket_launch</span>
+          <span class="text-[9px] font-bold text-green-700 bg-green-50 px-2 py-0.5">03 — BUILD</span>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══════════════════════ SOCIAL PROOF ═══════════════════════ -->
-<section id="proof" class="px-6 md:px-12 lg:px-20 py-24 bg-primary text-on-primary">
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-    <div>
-      <div class="inline-block bg-on-primary-container/20 px-2 py-0.5 mb-6">
-        <span class="text-[10px] font-mono text-on-primary-container tracking-widest">SECTION 04 / IMPACT</span>
-      </div>
-      <h2 class="font-headline text-3xl md:text-4xl text-white mb-6">Built for India's Industrial Backbone</h2>
-      <p class="text-white/60 leading-relaxed mb-8">Starting with manufacturing in Pune, expanding across verticals. Every agent is trained on the realities of Indian business — GST, vendor ecosystems, seasonal demand, and infrastructure constraints.</p>
-      <div class="space-y-4">
-        <div class="flex items-start gap-4">
-          <span class="material-symbols-outlined filled text-on-primary-container text-lg mt-0.5">check_circle</span>
-          <div>
-            <p class="text-white font-bold text-sm">GST-Native Intelligence</p>
-            <p class="text-white/50 text-xs mt-1">Every financial agent understands Indian tax structure out of the box.</p>
-          </div>
-        </div>
-        <div class="flex items-start gap-4">
-          <span class="material-symbols-outlined filled text-on-primary-container text-lg mt-0.5">check_circle</span>
-          <div>
-            <p class="text-white font-bold text-sm">WhatsApp-First Communication</p>
-            <p class="text-white/50 text-xs mt-1">Agents talk to your vendors and customers where they already are.</p>
-          </div>
-        </div>
-        <div class="flex items-start gap-4">
-          <span class="material-symbols-outlined filled text-on-primary-container text-lg mt-0.5">check_circle</span>
-          <div>
-            <p class="text-white font-bold text-sm">Industry-Specific Deep Tech</p>
-            <p class="text-white/50 text-xs mt-1">Custom models trained on real manufacturing data — not generic AI.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Metrics panel -->
-    <div class="space-y-4">
-      <div class="bg-white/5 border border-white/10 p-8 rounded-sm">
-        <div class="flex items-baseline gap-3 mb-2">
-          <span class="font-headline text-6xl text-white">92%</span>
-          <span class="text-white/40 text-lg">/100</span>
-        </div>
-        <p class="text-[10px] uppercase tracking-widest font-bold text-on-primary-container mb-2">Human Focus Ratio</p>
-        <p class="text-white/50 text-xs leading-relaxed">Your team spends 92% of their time on strategic work. Agents handle the rest.</p>
-        <div class="w-full h-1 bg-white/10 mt-6"><div class="h-full bg-on-primary-container" style="width:92%"></div></div>
-      </div>
-      <div class="grid grid-cols-2 gap-4">
-        <div class="bg-white/5 border border-white/10 p-6 rounded-sm text-center">
-          <span class="font-headline text-3xl text-white">1,248</span>
-          <p class="text-[10px] uppercase tracking-widest font-bold text-white/40 mt-2">Tasks / Day</p>
-        </div>
-        <div class="bg-white/5 border border-white/10 p-6 rounded-sm text-center">
-          <span class="font-headline text-3xl text-white">420h</span>
-          <p class="text-[10px] uppercase tracking-widest font-bold text-white/40 mt-2">Saved / Month</p>
-        </div>
+        <h4 class="text-sm font-bold text-primary mb-2">We build and deploy</h4>
+        <p class="text-xs text-secondary leading-relaxed">Agents and automations go live inside your existing tools. You review outcomes, not processes.</p>
       </div>
     </div>
   </div>
@@ -372,79 +233,36 @@ html { scroll-behavior: smooth; }
 
 
 <!-- ═══════════════════════ CTA ═══════════════════════ -->
-<section id="cta" class="px-6 md:px-12 lg:px-20 py-32 bg-surface text-center">
-  <div class="max-w-2xl mx-auto">
-    <div class="border-t border-outline-variant/30 pt-20">
-      <h2 class="font-headline text-4xl md:text-5xl text-primary mb-6">Ready to Focus on Growth?</h2>
-      <p class="text-secondary mb-12 text-lg leading-relaxed">Join the waitlist for India's first agentic ecosystem designed specifically for the industrial backbone of the country.</p>
-      <div class="flex flex-col sm:flex-row gap-0 max-w-md mx-auto">
-        <input
-          class="flex-grow bg-surface-container-highest border-none p-4 font-body text-sm focus:ring-2 focus:ring-on-primary-container outline-none rounded-sm sm:rounded-r-none"
-          placeholder="Organization Email"
-          type="email"
-        />
-        <button class="bg-primary text-white px-8 py-4 font-bold text-xs uppercase tracking-widest hover:bg-primary-container transition-colors rounded-sm sm:rounded-l-none whitespace-nowrap">
-          Get Early Access
-        </button>
-      </div>
-      <p class="mt-6 text-[10px] uppercase tracking-[0.15em] text-outline">Priority access for manufacturing units in Delhi & NCR</p>
+<section id="cta" class="px-5 md:px-12 lg:px-20 py-24 md:py-32 bg-primary text-white">
+  <div class="max-w-2xl mx-auto text-center">
+    <div class="inline-block bg-white/10 px-2 py-0.5 mb-6">
+      <span class="text-[10px] font-mono text-on-primary-container tracking-widest">EARLY PARTNERS</span>
     </div>
+    <h2 class="font-headline text-3xl sm:text-4xl md:text-5xl text-white mb-6 leading-tight">
+      Interested? Let's talk.
+    </h2>
+    <p class="text-white/60 mb-10 text-base md:text-lg leading-relaxed max-w-lg mx-auto">
+      We're looking for 3–5 industrial businesses to work with closely. If the problems above sound familiar, book a 15-minute call with us.
+    </p>
+    <a href="https://cal.com/sai-yashwanth/15min" target="_blank" class="inline-block bg-white text-primary px-10 py-4 text-sm font-bold uppercase tracking-widest hover:bg-surface-container-low transition-colors rounded-sm">
+      Book a 15-min Call
+    </a>
+    <p class="mt-6 text-[11px] uppercase tracking-[0.15em] text-white/30">No commitment. Just a conversation.</p>
   </div>
 </section>
 
 
 <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
-<footer class="bg-primary text-surface-variant px-6 md:px-12 lg:px-20 py-16">
-  <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12">
-    <div class="col-span-2">
-      <div class="flex items-center gap-3 mb-6">
-        <div class="w-8 h-8 bg-primary-container rounded-sm flex items-center justify-center">
-          <span class="material-symbols-outlined filled text-on-primary-container text-sm">hub</span>
-        </div>
-        <span class="font-headline text-xl text-white font-bold">AgenticB2B</span>
+<footer class="bg-primary text-surface-variant px-5 md:px-12 lg:px-20 py-10">
+  <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+    <div class="flex items-center gap-3">
+      <div class="w-7 h-7 bg-primary-container rounded-sm flex items-center justify-center">
+        <span class="material-symbols-outlined filled text-on-primary-container text-xs">hub</span>
       </div>
-      <p class="text-sm leading-relaxed max-w-xs text-white/50">Pioneering agentic systems for the Indian MSME sector. Precision. Reliability. Growth.</p>
+      <span class="font-headline text-base text-white font-bold">AgenticB2B</span>
     </div>
-    <div>
-      <h4 class="text-xs font-bold uppercase text-white mb-6 tracking-widest">Platform</h4>
-      <ul class="space-y-3 text-sm text-white/50">
-        <li><a class="hover:text-on-primary-container transition-colors cursor-pointer">Orchestrator</a></li>
-        <li><a class="hover:text-on-primary-container transition-colors cursor-pointer">Agent Library</a></li>
-        <li><a class="hover:text-on-primary-container transition-colors cursor-pointer">Security</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4 class="text-xs font-bold uppercase text-white mb-6 tracking-widest">Solutions</h4>
-      <ul class="space-y-3 text-sm text-white/50">
-        <li><a class="hover:text-on-primary-container transition-colors cursor-pointer">Manufacturing</a></li>
-        <li><a class="hover:text-on-primary-container transition-colors cursor-pointer">Procurement</a></li>
-        <li><a class="hover:text-on-primary-container transition-colors cursor-pointer">Logistics</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4 class="text-xs font-bold uppercase text-white mb-6 tracking-widest">Company</h4>
-      <ul class="space-y-3 text-sm text-white/50">
-        <li><a class="hover:text-on-primary-container transition-colors cursor-pointer">About</a></li>
-        <li><a class="hover:text-on-primary-container transition-colors cursor-pointer">Blog</a></li>
-        <li><a class="hover:text-on-primary-container transition-colors cursor-pointer">Contact</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4 class="text-xs font-bold uppercase text-white mb-6 tracking-widest">Connect</h4>
-      <div class="flex gap-4">
-        <span class="material-symbols-outlined text-lg text-white/50 cursor-pointer hover:text-on-primary-container transition-colors">share</span>
-        <span class="material-symbols-outlined text-lg text-white/50 cursor-pointer hover:text-on-primary-container transition-colors">alternate_email</span>
-        <span class="material-symbols-outlined text-lg text-white/50 cursor-pointer hover:text-on-primary-container transition-colors">code</span>
-      </div>
-    </div>
-  </div>
-  <div class="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] uppercase tracking-widest text-white/30">
-    <p>&copy; 2024 AgenticB2B. Built for Indian Industry.</p>
-    <div class="flex gap-6">
-      <a class="cursor-pointer hover:text-white/60">Privacy Policy</a>
-      <a class="cursor-pointer hover:text-white/60">Terms of Service</a>
-      <a class="cursor-pointer hover:text-white/60">Security Audit</a>
-    </div>
+    <p class="text-[11px] uppercase tracking-widest text-white/30">&copy; 2025 AgenticB2B. Built for Indian Industry.</p>
+    <a href="https://cal.com/sai-yashwanth/15min" target="_blank" class="text-[11px] uppercase tracking-widest text-white/50 hover:text-white transition-colors">Book a Call</a>
   </div>
 </footer>
 

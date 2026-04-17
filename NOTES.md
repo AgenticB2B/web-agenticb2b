@@ -2,16 +2,16 @@
 
 ## What We Are
 
-We build AI agents for industrial SMBs in India.
+We build AI agents and automations for industrial SMBs in India.
 
-A services agency, not a product company. We come in, understand your operations, and build the automation layer that ties it together.
+We come in, understand your operations, and build the intelligent automation layer that ties it together.
 
 ---
 
 ## Who We Serve
 
 Small to medium industrial businesses in India — manufacturing, physical products, B2B sales.
-Typically 10–200 employees. Operations run on WhatsApp, email, and memory. Little to no digital infrastructure.
+Typically 10–200 employees. Your operations run on WhatsApp, email, and memory. Little to no digital infrastructure.
 
 ---
 
@@ -40,7 +40,7 @@ Leads arrive from exhibitions, WhatsApp, email, phone, distributors — all scat
 
 **Track 2 — Process Intelligence (exploratory)**
 Industrial processes generate data nobody is using. Decisions are made on intuition, not signal.
-- Purpose-built agents for specific industrial process problems
+- Purpose-built agents and workflows for specific industrial process problems
 - Modelling, prediction, automation at the process level
 - Needs further customer discovery before we go wide
 
