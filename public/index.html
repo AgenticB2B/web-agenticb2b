@@ -1,217 +1,327 @@
-<!DOCTYPE html>
-<html class="light" lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>AgenticB2B | AI Agents for Indian Industrial Businesses</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;0,800;1,400&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<script>
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        "outline": "#75777d",
-        "outline-variant": "#c5c6cd",
-        "surface": "#fbf9f6",
-        "on-surface": "#1b1c1a",
-        "on-error-container": "#93000a",
-        "surface-container": "#efeeeb",
-        "error": "#ba1a1a",
-        "on-primary": "#ffffff",
-        "secondary-container": "#d5e0f8",
-        "surface-variant": "#e4e2df",
-        "on-primary-container": "#4b8dff",
-        "surface-container-low": "#f5f3f0",
-        "surface-container-high": "#eae8e5",
-        "primary-fixed": "#d8e2ff",
-        "error-container": "#ffdad6",
-        "primary": "#001334",
-        "tertiary": "#041528",
-        "primary-container": "#00275b",
-        "on-secondary": "#ffffff",
-        "secondary": "#545f73",
-        "on-secondary-container": "#586377",
-        "surface-container-lowest": "#ffffff",
-        "surface-container-highest": "#e4e2df",
-        "on-surface-variant": "#45474c"
-      },
-      fontFamily: {
-        "headline": ["Noto Serif", "serif"],
-        "body": ["Inter", "sans-serif"],
-      },
-      borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem"},
-    },
-  },
-}
-</script>
-<style>
-.material-symbols-outlined {
-  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-  vertical-align: middle;
-}
-.filled { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-.blueprint-grid {
-  background-image: radial-gradient(#c5c6cd 0.5px, transparent 0.5px);
-  background-size: 24px 24px;
-}
-html { scroll-behavior: smooth; }
-@keyframes fade-up {
-  from { opacity: 0; transform: translateY(24px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-.fade-up { animation: fade-up 0.7s ease-out both; }
-.fade-up-d1 { animation-delay: 0.1s; }
-.fade-up-d2 { animation-delay: 0.2s; }
-.fade-up-d3 { animation-delay: 0.35s; }
-.fade-up-d4 { animation-delay: 0.5s; }
-</style>
-</head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgenticB2B | AI Agents for Indian Industrial Businesses</title>
+    <meta name="description" content="We build AI agents and automation for Indian industrial businesses. Connect your tools, reconcile your data, and ship the workflows your ERP can't." />
+    <meta name="author" content="AgenticB2B" />
 
-<body class="bg-surface font-body text-on-surface antialiased">
+    <meta property="og:title" content="AgenticB2B | AI Agents for Indian Industrial Businesses" />
+    <meta property="og:description" content="We build AI agents and automation for Indian industrial businesses." />
+    <meta property="og:type" content="website" />
 
-<!-- ═══════════════════════ TOP NAV ═══════════════════════ -->
-<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-5 md:px-12 h-16 bg-[#fbf9f6]/90 backdrop-blur-md border-b border-outline-variant/10">
-  <div class="flex items-center gap-3">
-    <div class="w-8 h-8 bg-primary rounded-sm flex items-center justify-center">
-      <span class="material-symbols-outlined filled text-on-primary text-sm">hub</span>
-    </div>
-    <span class="text-lg font-headline font-bold text-primary">AgenticB2B</span>
-  </div>
-  <div class="hidden md:flex items-center gap-8">
-    <a href="#what-we-fix" class="text-secondary text-sm font-medium hover:text-primary transition-colors">What We Fix</a>
-    <a href="#how" class="text-secondary text-sm font-medium hover:text-primary transition-colors">How It Works</a>
-    <a href="#cta" class="bg-primary text-on-primary px-5 py-2 text-xs font-bold uppercase tracking-widest hover:opacity-90 transition-opacity">Book a Call</a>
-  </div>
-  <button class="md:hidden material-symbols-outlined text-primary text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">menu</button>
-</nav>
+    <meta name="twitter:card" content="summary_large_image" />
 
-<!-- Mobile Menu -->
-<div id="mobile-menu" class="hidden fixed top-16 left-0 right-0 bg-surface z-40 p-6 border-b border-outline-variant/20 md:hidden">
-  <div class="flex flex-col gap-5">
-    <a href="#what-we-fix" class="text-primary font-medium text-base" onclick="document.getElementById('mobile-menu').classList.add('hidden')">What We Fix</a>
-    <a href="#how" class="text-primary font-medium text-base" onclick="document.getElementById('mobile-menu').classList.add('hidden')">How It Works</a>
-    <a href="#cta" class="bg-primary text-on-primary px-5 py-3 text-xs font-bold uppercase tracking-widest text-center" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Book a Call</a>
-  </div>
-</div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&display=swap" rel="stylesheet" />
 
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              paper: "#fbf9f5",
+              ink: "#000a1f",
+              navy: "#001334",
+              "navy-2": "#0a1d44",
+              line: "#e3e0d8",
+              muted: "#5a6175",
+            },
+            fontFamily: {
+              display: ['Fraunces', 'Noto Serif', 'serif'],
+              body: ['Inter', 'system-ui', 'sans-serif'],
+            },
+            borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem" },
+          },
+        },
+      };
+    </script>
 
-<!-- ═══════════════════════ HERO ═══════════════════════ -->
-<section class="relative min-h-screen flex items-center overflow-hidden">
-  <div class="w-full px-5 md:px-12 lg:px-20 pt-28 pb-16 md:pt-32 md:pb-20 flex flex-col items-center text-center">
-    <h1 class="font-headline text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-primary leading-[1.05] tracking-tight mb-6 fade-up max-w-4xl">
-      We build AI agents for Indian industrial businesses.
-    </h1>
+    <style>
+      html { scroll-behavior: smooth; }
+      body { font-family: 'Inter', system-ui, sans-serif; background: #fbf9f5; color: #000a1f; -webkit-font-smoothing: antialiased; }
+      .font-display { font-family: 'Fraunces', 'Noto Serif', serif; font-optical-sizing: auto; letter-spacing: -0.02em; }
+      .text-balance { text-wrap: balance; }
+      .grid-dots { background-image: radial-gradient(rgba(0,19,52,0.18) 1px, transparent 1px); background-size: 22px 22px; }
+      .grid-dots-light { background-image: radial-gradient(rgba(255,255,255,0.18) 1px, transparent 1px); background-size: 26px 26px; }
+      ::selection { background: #001334; color: #fbf9f5; }
 
-    <p class="font-body text-lg md:text-xl text-secondary leading-relaxed mb-10 max-w-xl fade-up fade-up-d2">
-      Your operations run on WhatsApp, email, and memory. We come in, understand how your business works, and build the automation layer that ties it all together.
-    </p>
+      @keyframes fade-up { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+      .fade-up { animation: fade-up 0.8s cubic-bezier(.2,.7,.2,1) both; }
+      .d1 { animation-delay: .1s; } .d2 { animation-delay: .2s; } .d3 { animation-delay: .35s; } .d4 { animation-delay: .5s; }
 
-    <div class="flex flex-col sm:flex-row gap-4 fade-up fade-up-d3">
-      <a href="#cta" class="bg-primary text-white px-8 py-4 text-sm font-bold uppercase tracking-wider rounded-sm hover:translate-y-[-2px] transition-transform active:translate-y-0 shadow-lg shadow-primary/10 text-center">
-        Book a Call
-      </a>
-      <a href="#what-we-fix" class="border border-outline text-primary px-8 py-4 text-sm font-bold uppercase tracking-wider rounded-sm hover:bg-surface-container-low transition-colors text-center">
-        What We Fix
-      </a>
-    </div>
-  </div>
-</section>
+      @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: .3; } }
+      .ticker-dot { animation: blink 1.6s ease-in-out infinite; }
 
+      .nav-scrolled { background: rgba(251,249,245,0.85); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(0,19,52,0.08); }
+    </style>
+  </head>
 
-<!-- ═══════════════════════ WHAT WE FIX ═══════════════════════ -->
-<section id="what-we-fix" class="px-5 md:px-12 lg:px-20 py-20 md:py-24 bg-white">
-  <div class="max-w-3xl mx-auto">
-    <h2 class="font-headline text-4xl md:text-5xl text-primary mb-16 text-center">The problems we solve</h2>
+  <body>
+    <!-- NAV -->
+    <header id="site-nav" class="fixed top-0 inset-x-0 z-50 transition-all duration-300">
+      <nav class="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
+        <a href="#top" class="flex items-center gap-2.5">
+          <span class="grid place-items-center w-8 h-8 bg-navy text-paper rounded-sm font-display font-semibold">A</span>
+          <span class="font-display text-lg tracking-tight">Agentic<span class="italic font-medium">B2B</span></span>
+        </a>
+        <div class="hidden md:flex items-center gap-9 text-sm text-muted">
+          <a href="#problems" class="hover:text-ink transition-colors">What we fix</a>
+          <a href="#process" class="hover:text-ink transition-colors">How it works</a>
+          <a href="#principles" class="hover:text-ink transition-colors">Principles</a>
+        </div>
+        <a href="#contact" class="inline-flex items-center gap-2 bg-navy text-paper px-4 py-2 text-sm font-medium rounded-sm hover:bg-navy-2 transition-colors">
+          Book a call <span aria-hidden>→</span>
+        </a>
+      </nav>
+    </header>
 
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-      <div class="p-6 md:p-8 border border-outline-variant/30 rounded-sm">
-        <div class="text-3xl mb-4">🔌</div>
-        <h3 class="font-headline text-lg text-primary mb-2">Disconnected tools</h3>
-        <p class="text-secondary text-sm leading-relaxed">Your business runs across 4–5 software that don't talk to each other. No single view of what's happening.</p>
-      </div>
-      <div class="p-6 md:p-8 border border-outline-variant/30 rounded-sm">
-        <div class="text-3xl mb-4">📊</div>
-        <h3 class="font-headline text-lg text-primary mb-2">Data never reconciled</h3>
-        <p class="text-secondary text-sm leading-relaxed">Numbers in Excel don't match the ERP. Someone manually copies data between systems every day.</p>
-      </div>
-      <div class="p-6 md:p-8 border border-outline-variant/30 rounded-sm">
-        <div class="text-3xl mb-4">⚙️</div>
-        <h3 class="font-headline text-lg text-primary mb-2">ERP that doesn't fit</h3>
-        <p class="text-secondary text-sm leading-relaxed">Either you don't have one, it's mid-migration, or it works for 80% of your operations and breaks on the rest.</p>
-      </div>
-      <div class="p-6 md:p-8 border border-outline-variant/30 rounded-sm">
-        <div class="text-3xl mb-4">🧩</div>
-        <h3 class="font-headline text-lg text-primary mb-2">No custom features</h3>
-        <p class="text-secondary text-sm leading-relaxed">Third-party tools almost fit your workflow, but that one thing you actually need isn't available.</p>
-      </div>
-    </div>
+    <main>
+      <!-- HERO -->
+      <section id="top" class="relative pt-36 pb-24 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute inset-0 grid-dots opacity-60 pointer-events-none"></div>
+        <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-ink/10 to-transparent"></div>
 
-    <div class="mt-16 text-center">
-      <h3 class="font-headline text-xl text-primary mb-2">What we do about it</h3>
-      <p class="text-secondary leading-relaxed text-sm md:text-base max-w-xl mx-auto">We don't sell you another software. We come in, map your operations end to end, and build agents and automations that work with what you already have, so your systems finally talk to each other.</p>
-    </div>
-  </div>
-</section>
+        <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
+          <div class="fade-up flex items-center gap-3 text-xs font-medium tracking-[0.2em] uppercase text-muted">
+            <span class="ticker-dot inline-block w-1.5 h-1.5 rounded-full bg-navy"></span>
+            Now onboarding · 3–5 industrial businesses
+          </div>
 
+          <h1 class="fade-up d1 mt-8 font-display leading-[0.98] tracking-tight max-w-5xl text-balance" style="font-size: clamp(2.5rem, 7vw, 5.75rem);">
+            We build <em class="italic font-normal text-navy/80">AI agents</em> for India's
+            <br class="hidden md:block" />
+            <span class="relative inline-block">
+              industrial businesses.
+              <svg class="absolute -bottom-2 left-0 w-full" viewBox="0 0 400 12" fill="none" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M2 8 Q 100 2, 200 6 T 398 4" stroke="#001334" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </h1>
 
-<!-- ═══════════════════════ HOW IT WORKS ═══════════════════════ -->
-<section id="how" class="px-5 md:px-12 lg:px-20 py-20 md:py-24 bg-white">
-  <div class="max-w-3xl mx-auto">
-    <h2 class="font-headline text-4xl md:text-5xl text-primary mb-16 text-center">How it works</h2>
+          <p class="fade-up d2 mt-10 max-w-2xl text-lg lg:text-xl leading-relaxed text-muted">
+            Your operations run on WhatsApp, email, and memory. We come in, understand how your business actually works, and build the automation layer that ties it all together.
+          </p>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8">
-      <div class="p-6 border border-outline-variant/30 rounded-sm">
-        <div class="text-3xl mb-4">💬</div>
-        <h4 class="font-headline text-lg text-primary mb-2">Discovery call</h4>
-        <p class="text-secondary text-sm leading-relaxed">We ask about your workflow, your tools, where things break down. No pitch deck, no pressure.</p>
-      </div>
-      <div class="p-6 border border-outline-variant/30 rounded-sm">
-        <div class="text-3xl mb-4">🗺️</div>
-        <h4 class="font-headline text-lg text-primary mb-2">We map and propose</h4>
-        <p class="text-secondary text-sm leading-relaxed">We document your current ops, identify what can be automated, and come back with a concrete plan and scope.</p>
-      </div>
-      <div class="p-6 border border-outline-variant/30 rounded-sm">
-        <div class="text-3xl mb-4">🚀</div>
-        <h4 class="font-headline text-lg text-primary mb-2">We build and deploy</h4>
-        <p class="text-secondary text-sm leading-relaxed">Agents and automations go live inside your existing tools. You review outcomes, not processes.</p>
-      </div>
-    </div>
-  </div>
-</section>
+          <div class="fade-up d3 mt-12 flex flex-wrap items-center gap-4">
+            <a href="#contact" class="group inline-flex items-center gap-3 bg-navy text-paper pl-6 pr-4 py-3.5 rounded-sm font-medium hover:bg-navy-2 transition-all">
+              Book a discovery call
+              <span class="grid place-items-center w-7 h-7 bg-paper/15 rounded-sm transition-transform group-hover:translate-x-0.5">→</span>
+            </a>
+            <a href="#problems" class="inline-flex items-center gap-2 px-5 py-3.5 rounded-sm font-medium text-ink border border-ink/20 hover:border-ink/60 hover:bg-ink/[0.03] transition-colors">
+              See what we fix
+            </a>
+          </div>
 
+          <div class="fade-up d4 mt-20 lg:mt-28 grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-6 border-t border-line pt-8">
+            <div><div class="font-display text-2xl lg:text-3xl tracking-tight">4–7</div><div class="mt-1 text-xs uppercase tracking-widest text-muted">Avg. tools per client</div></div>
+            <div><div class="font-display text-2xl lg:text-3xl tracking-tight">30+</div><div class="mt-1 text-xs uppercase tracking-widest text-muted">Manual hours saved / wk</div></div>
+            <div><div class="font-display text-2xl lg:text-3xl tracking-tight">2 wks</div><div class="mt-1 text-xs uppercase tracking-widest text-muted">Time to first agent</div></div>
+            <div><div class="font-display text-2xl lg:text-3xl tracking-tight">Steel · Chem · Mfg</div><div class="mt-1 text-xs uppercase tracking-widest text-muted">Industries served</div></div>
+          </div>
+        </div>
+      </section>
 
-<!-- ═══════════════════════ CTA ═══════════════════════ -->
-<section id="cta" class="px-5 md:px-12 lg:px-20 py-24 md:py-32 bg-primary text-white">
-  <div class="max-w-2xl mx-auto text-center">
-    <h2 class="font-headline text-3xl sm:text-4xl md:text-5xl text-white mb-6 leading-tight">
-      Interested? Let's talk.
-    </h2>
-    <p class="text-white/60 mb-10 text-base md:text-lg leading-relaxed max-w-lg mx-auto">
-      We're looking for 3–5 industrial businesses to work with closely. If the problems above sound familiar, book a 15-minute call with us.
-    </p>
-    <a href="https://cal.com/sai-yashwanth/15min" target="_blank" class="inline-block bg-white text-primary px-10 py-4 text-sm font-bold uppercase tracking-widest hover:bg-surface-container-low transition-colors rounded-sm">
-      Book a 15-min Call
-    </a>
-    <p class="mt-6 text-[11px] uppercase tracking-[0.15em] text-white/30">No commitment. Just a conversation.</p>
-  </div>
-</section>
+      <!-- PROBLEMS -->
+      <section id="problems" class="relative py-28 lg:py-36 bg-[#f3efe6] border-y border-line">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <div class="grid lg:grid-cols-12 gap-10 lg:gap-16 items-end">
+            <div class="lg:col-span-5">
+              <div class="text-xs font-medium tracking-[0.2em] uppercase text-muted">§01 — The problem</div>
+              <h2 class="mt-5 font-display text-4xl md:text-5xl lg:text-6xl leading-[1.02] tracking-tight text-balance">
+                Software was sold. <em class="italic font-normal">Operations were not solved.</em>
+              </h2>
+            </div>
+            <div class="lg:col-span-6 lg:col-start-7">
+              <p class="text-lg leading-relaxed text-muted">
+                We've sat with founders running ₹50 Cr to ₹500 Cr industrial businesses. The pattern is the same — tools layered over tools, none of them talking, and someone in accounts holding it all together with a spreadsheet.
+              </p>
+            </div>
+          </div>
 
+          <div class="mt-20 grid md:grid-cols-2 gap-px bg-line border border-line">
+            <article class="group bg-paper p-8 lg:p-10 hover:bg-white transition-colors">
+              <div class="flex items-start justify-between">
+                <span class="font-display text-sm text-muted tracking-widest">01</span>
+                <span class="w-10 h-10 grid place-items-center border border-line rounded-sm text-ink/60 group-hover:border-ink group-hover:text-ink transition-colors">→</span>
+              </div>
+              <h3 class="mt-8 font-display text-2xl lg:text-[1.75rem] tracking-tight">Disconnected tools</h3>
+              <p class="mt-4 text-muted leading-relaxed">Your business runs across 4–5 software that don't talk to each other. No single view of what's actually happening on the floor.</p>
+            </article>
+            <article class="group bg-paper p-8 lg:p-10 hover:bg-white transition-colors">
+              <div class="flex items-start justify-between">
+                <span class="font-display text-sm text-muted tracking-widest">02</span>
+                <span class="w-10 h-10 grid place-items-center border border-line rounded-sm text-ink/60 group-hover:border-ink group-hover:text-ink transition-colors">→</span>
+              </div>
+              <h3 class="mt-8 font-display text-2xl lg:text-[1.75rem] tracking-tight">Data never reconciled</h3>
+              <p class="mt-4 text-muted leading-relaxed">Numbers in Excel don't match the ERP. Someone manually copies data between systems every single day, and errors compound.</p>
+            </article>
+            <article class="group bg-paper p-8 lg:p-10 hover:bg-white transition-colors">
+              <div class="flex items-start justify-between">
+                <span class="font-display text-sm text-muted tracking-widest">03</span>
+                <span class="w-10 h-10 grid place-items-center border border-line rounded-sm text-ink/60 group-hover:border-ink group-hover:text-ink transition-colors">→</span>
+              </div>
+              <h3 class="mt-8 font-display text-2xl lg:text-[1.75rem] tracking-tight">An ERP that doesn't fit</h3>
+              <p class="mt-4 text-muted leading-relaxed">Either you don't have one, you're mid-migration, or it works for 80% of your operations and breaks on the 20% that matter most.</p>
+            </article>
+            <article class="group bg-paper p-8 lg:p-10 hover:bg-white transition-colors">
+              <div class="flex items-start justify-between">
+                <span class="font-display text-sm text-muted tracking-widest">04</span>
+                <span class="w-10 h-10 grid place-items-center border border-line rounded-sm text-ink/60 group-hover:border-ink group-hover:text-ink transition-colors">→</span>
+              </div>
+              <h3 class="mt-8 font-display text-2xl lg:text-[1.75rem] tracking-tight">No room for custom</h3>
+              <p class="mt-4 text-muted leading-relaxed">Third-party tools almost fit your workflow. But the one feature you actually need? It isn't there, and nobody will build it.</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
-<footer class="bg-primary text-surface-variant px-5 md:px-12 lg:px-20 py-10">
-  <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
-    <div class="flex items-center gap-3">
-      <div class="w-7 h-7 bg-primary-container rounded-sm flex items-center justify-center">
-        <span class="material-symbols-outlined filled text-on-primary-container text-xs">hub</span>
-      </div>
-      <span class="font-headline text-base text-white font-bold">AgenticB2B</span>
-    </div>
-    <p class="text-[11px] uppercase tracking-widest text-white/30">&copy; 2026 AgenticB2B. Built for Indian Industry.</p>
-    <a href="https://cal.com/sai-yashwanth/15min" target="_blank" class="text-[11px] uppercase tracking-widest text-white/50 hover:text-white transition-colors">Book a Call</a>
-  </div>
-</footer>
+      <!-- APPROACH -->
+      <section id="principles" class="py-28 lg:py-36 bg-navy text-paper relative overflow-hidden">
+        <div class="absolute inset-0 grid-dots-light opacity-30 pointer-events-none"></div>
+        <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
+          <div class="text-xs font-medium tracking-[0.2em] uppercase text-paper/60">§02 — Our approach</div>
+          <h2 class="mt-6 font-display text-4xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight max-w-4xl text-balance">
+            We don't sell you another piece of software.
+            <em class="italic font-normal text-paper/70"> We make the ones you have actually work.</em>
+          </h2>
 
-</body>
+          <div class="mt-20 grid md:grid-cols-3 gap-12 lg:gap-16">
+            <div class="border-t border-paper/20 pt-6">
+              <div class="font-display italic text-paper/50 text-sm">01 —</div>
+              <h3 class="mt-3 font-display text-2xl tracking-tight">Map first, build second</h3>
+              <p class="mt-4 text-paper/70 leading-relaxed">We spend the first weeks shadowing your team. We don't propose anything until we understand exactly how a purchase order moves from WhatsApp to dispatch.</p>
+            </div>
+            <div class="border-t border-paper/20 pt-6">
+              <div class="font-display italic text-paper/50 text-sm">02 —</div>
+              <h3 class="mt-3 font-display text-2xl tracking-tight">Work with what's there</h3>
+              <p class="mt-4 text-paper/70 leading-relaxed">Tally, SAP, Zoho, Excel, WhatsApp — we plug into your existing stack. No rip-and-replace. No three-month migration.</p>
+            </div>
+            <div class="border-t border-paper/20 pt-6">
+              <div class="font-display italic text-paper/50 text-sm">03 —</div>
+              <h3 class="mt-3 font-display text-2xl tracking-tight">Outcomes, not dashboards</h3>
+              <p class="mt-4 text-paper/70 leading-relaxed">We measure success by hours saved, errors avoided, and decisions made faster — not by how pretty the dashboard looks.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section id="process" class="py-28 lg:py-36">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <div class="max-w-3xl">
+            <div class="text-xs font-medium tracking-[0.2em] uppercase text-muted">§03 — How it works</div>
+            <h2 class="mt-5 font-display text-4xl md:text-5xl lg:text-6xl leading-[1.02] tracking-tight text-balance">
+              Six weeks from <em class="italic font-normal">first call</em> to <em class="italic font-normal">first agent</em> in production.
+            </h2>
+          </div>
+
+          <div class="mt-20 relative">
+            <div class="hidden md:block absolute top-12 left-[8%] right-[8%] h-px bg-line"></div>
+            <div class="grid md:grid-cols-3 gap-10 md:gap-6">
+              <div>
+                <div class="flex items-center gap-4">
+                  <div class="relative w-10 h-10 grid place-items-center bg-paper border border-ink rounded-full font-display text-sm">01</div>
+                  <div class="text-xs uppercase tracking-widest text-muted">Week 1</div>
+                </div>
+                <h3 class="mt-8 font-display text-3xl tracking-tight">Discovery call</h3>
+                <p class="mt-4 text-muted leading-relaxed">We ask about your workflow, your tools, where things break. No pitch deck. No pressure.</p>
+              </div>
+              <div>
+                <div class="flex items-center gap-4">
+                  <div class="relative w-10 h-10 grid place-items-center bg-paper border border-ink rounded-full font-display text-sm">02</div>
+                  <div class="text-xs uppercase tracking-widest text-muted">Week 1–2</div>
+                </div>
+                <h3 class="mt-8 font-display text-3xl tracking-tight">We map and propose</h3>
+                <p class="mt-4 text-muted leading-relaxed">We document your current operations end-to-end, identify what can be automated, and come back with a concrete plan and fixed scope.</p>
+              </div>
+              <div>
+                <div class="flex items-center gap-4">
+                  <div class="relative w-10 h-10 grid place-items-center bg-paper border border-ink rounded-full font-display text-sm">03</div>
+                  <div class="text-xs uppercase tracking-widest text-muted">Week 3–6</div>
+                </div>
+                <h3 class="mt-8 font-display text-3xl tracking-tight">We build and deploy</h3>
+                <p class="mt-4 text-muted leading-relaxed">Agents and automations go live inside the tools your team already uses. You review outcomes, not processes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="relative py-28 lg:py-40 bg-[#f3efe6] border-t border-line">
+        <div class="max-w-5xl mx-auto px-6 lg:px-10 text-center">
+          <div class="text-xs font-medium tracking-[0.2em] uppercase text-muted">§04 — Let's talk</div>
+          <h2 class="mt-6 font-display text-5xl md:text-6xl lg:text-7xl leading-[0.98] tracking-tight text-balance">
+            Interested? <em class="italic font-normal">Let's have a conversation.</em>
+          </h2>
+          <p class="mt-8 max-w-2xl mx-auto text-lg leading-relaxed text-muted">
+            We're taking on 3–5 industrial businesses this quarter to work with closely. If the problems above sound familiar, book a 15-minute call. No commitment.
+          </p>
+          <div class="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="https://cal.com/sai-yashwanth/15min" target="_blank" class="group inline-flex items-center gap-3 bg-navy text-paper pl-7 pr-4 py-4 rounded-sm font-medium hover:bg-navy-2 transition-all">
+              Book a 15-min call
+              <span class="grid place-items-center w-8 h-8 bg-paper/15 rounded-sm transition-transform group-hover:translate-x-0.5">→</span>
+            </a>
+            <a href="mailto:hello@agenticb2b.com" class="text-sm text-muted hover:text-ink underline underline-offset-4 decoration-ink/30">
+              or email hello@agenticb2b.com
+            </a>
+          </div>
+          <div class="mt-16 inline-flex items-center gap-3 text-xs uppercase tracking-widest text-muted">
+            <span class="w-8 h-px bg-line"></span> No commitment · just a conversation <span class="w-8 h-px bg-line"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="bg-navy text-paper">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 py-16">
+          <div class="grid md:grid-cols-12 gap-10 items-end">
+            <div class="md:col-span-6">
+              <div class="flex items-center gap-3">
+                <span class="grid place-items-center w-9 h-9 bg-paper text-navy rounded-sm font-display font-semibold">A</span>
+                <span class="font-display text-xl tracking-tight">Agentic<span class="italic font-medium">B2B</span></span>
+              </div>
+              <p class="mt-6 font-display text-2xl md:text-3xl leading-tight max-w-md">
+                Built for the factories, mills, and warehouses of <em class="italic">Bharat</em>.
+              </p>
+            </div>
+            <div class="md:col-span-3">
+              <div class="text-xs uppercase tracking-widest text-paper/50">Site</div>
+              <ul class="mt-4 space-y-2 text-paper/80">
+                <li><a href="#problems" class="hover:text-paper">What we fix</a></li>
+                <li><a href="#process" class="hover:text-paper">How it works</a></li>
+                <li><a href="#contact" class="hover:text-paper">Book a call</a></li>
+              </ul>
+            </div>
+            <div class="md:col-span-3">
+              <div class="text-xs uppercase tracking-widest text-paper/50">Reach us</div>
+              <ul class="mt-4 space-y-2 text-paper/80">
+                <li><a href="mailto:hello@agenticb2b.com" class="hover:text-paper">hello@agenticb2b.com</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-16 pt-6 border-t border-paper/15 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 text-xs text-paper/60">
+            <div>© 2026 AgenticB2B — Made in India.</div>
+            <div class="font-display italic">Operations, automated.</div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      (function() {
+        var nav = document.getElementById('site-nav');
+        var onScroll = function() {
+          if (window.scrollY > 12) nav.classList.add('nav-scrolled');
+          else nav.classList.remove('nav-scrolled');
+        };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+      })();
+    </script>
+  </body>
 </html>
