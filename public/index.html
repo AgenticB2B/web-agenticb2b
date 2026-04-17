@@ -99,10 +99,8 @@ html { scroll-behavior: smooth; }
 
 <!-- ═══════════════════════ HERO ═══════════════════════ -->
 <section class="relative min-h-screen flex items-center overflow-hidden">
-  <div class="absolute inset-0 blueprint-grid opacity-20 pointer-events-none"></div>
-
-  <div class="relative z-10 px-5 md:px-12 lg:px-20 max-w-3xl pt-28 pb-16 md:pt-32 md:pb-20">
-    <h1 class="font-headline text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-primary leading-[1.05] tracking-tight mb-6 fade-up">
+  <div class="w-full px-5 md:px-12 lg:px-20 pt-28 pb-16 md:pt-32 md:pb-20 flex flex-col items-center text-center">
+    <h1 class="font-headline text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-primary leading-[1.05] tracking-tight mb-6 fade-up max-w-4xl">
       We build AI agents for Indian industrial businesses.
     </h1>
 
@@ -123,33 +121,33 @@ html { scroll-behavior: smooth; }
 
 
 <!-- ═══════════════════════ WHAT WE FIX ═══════════════════════ -->
-<section id="what-we-fix" class="px-5 md:px-12 lg:px-20 py-20 md:py-24 bg-surface-container-low">
+<section id="what-we-fix" class="px-5 md:px-12 lg:px-20 py-20 md:py-24 bg-white">
   <div class="mb-12 md:mb-16">
     <h2 class="font-headline text-3xl md:text-4xl text-primary mb-3">The problems we solve</h2>
     <p class="text-secondary max-w-lg text-sm md:text-base">Most industrial SMBs run on tools that don't talk to each other. Here's what that looks like in practice.</p>
   </div>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-    <div class="bg-surface p-6 md:p-8 rounded-sm shadow-sm border-t-2 border-on-primary-container">
-      <span class="material-symbols-outlined text-on-primary-container text-3xl mb-4 block">device_hub</span>
+    <div class="p-6 md:p-8 border border-outline-variant/30 rounded-sm">
+      <span class="material-symbols-outlined text-primary text-3xl mb-4 block">device_hub</span>
       <h3 class="font-headline text-lg text-primary mb-3">Disconnected tools</h3>
       <p class="text-secondary text-sm leading-relaxed">Your business runs across 4–5 software that don't talk to each other. No single view of what's happening.</p>
     </div>
 
-    <div class="bg-surface p-6 md:p-8 rounded-sm shadow-sm border-t-2 border-on-primary-container">
-      <span class="material-symbols-outlined text-on-primary-container text-3xl mb-4 block">sync_problem</span>
+    <div class="p-6 md:p-8 border border-outline-variant/30 rounded-sm">
+      <span class="material-symbols-outlined text-primary text-3xl mb-4 block">sync_problem</span>
       <h3 class="font-headline text-lg text-primary mb-3">Data never reconciled</h3>
       <p class="text-secondary text-sm leading-relaxed">Numbers in Excel don't match the ERP. Someone manually copies data between systems every day.</p>
     </div>
 
-    <div class="bg-surface p-6 md:p-8 rounded-sm shadow-sm border-t-2 border-on-primary-container">
-      <span class="material-symbols-outlined text-on-primary-container text-3xl mb-4 block">construction</span>
+    <div class="p-6 md:p-8 border border-outline-variant/30 rounded-sm">
+      <span class="material-symbols-outlined text-primary text-3xl mb-4 block">construction</span>
       <h3 class="font-headline text-lg text-primary mb-3">ERP that doesn't fit</h3>
       <p class="text-secondary text-sm leading-relaxed">Either you don't have one, it's mid-migration, or it works for 80% of your operations and breaks on the rest.</p>
     </div>
 
-    <div class="bg-surface p-6 md:p-8 rounded-sm shadow-sm border-t-2 border-on-primary-container">
-      <span class="material-symbols-outlined text-on-primary-container text-3xl mb-4 block">extension_off</span>
+    <div class="p-6 md:p-8 border border-outline-variant/30 rounded-sm">
+      <span class="material-symbols-outlined text-primary text-3xl mb-4 block">extension_off</span>
       <h3 class="font-headline text-lg text-primary mb-3">No custom features</h3>
       <p class="text-secondary text-sm leading-relaxed">Third-party tools almost fit your workflow — but that one thing you actually need isn't available.</p>
     </div>
@@ -165,42 +163,38 @@ html { scroll-behavior: smooth; }
 
 
 <!-- ═══════════════════════ HOW IT WORKS ═══════════════════════ -->
-<section id="how" class="px-5 md:px-12 lg:px-20 py-20 md:py-24 bg-surface">
+<section id="how" class="px-5 md:px-12 lg:px-20 py-20 md:py-24 bg-white">
   <div class="mb-12 md:mb-16">
     <h2 class="font-headline text-3xl md:text-4xl text-primary mb-3">How it works</h2>
     <p class="text-secondary max-w-lg text-sm md:text-base">Simple engagement, no fluff.</p>
   </div>
 
-  <div class="bg-surface-container-low p-5 md:p-10 border-l-2 border-primary-container relative overflow-hidden">
-    <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(#001334 1px, transparent 1px); background-size: 20px 20px;"></div>
-
-    <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10">
-      <div class="bg-white p-6 shadow-sm border-t-4 border-on-primary-container">
-        <div class="flex justify-between items-start mb-4">
-          <span class="material-symbols-outlined text-secondary">forum</span>
-          <span class="text-[9px] font-bold text-on-primary-container bg-primary-fixed px-2 py-0.5">01 — TALK</span>
-        </div>
-        <h4 class="text-sm font-bold text-primary mb-2">We understand your operations</h4>
-        <p class="text-xs text-secondary leading-relaxed">A 30-minute call. We ask about your workflow, your tools, where things break down. No pitch deck.</p>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8">
+    <div class="p-6 border border-outline-variant/30 rounded-sm">
+      <div class="flex justify-between items-start mb-4">
+        <span class="material-symbols-outlined text-primary">forum</span>
+        <span class="text-[9px] font-bold text-primary/40 tracking-widest">01</span>
       </div>
+      <h4 class="font-headline text-base text-primary mb-2">We understand your operations</h4>
+      <p class="text-sm text-secondary leading-relaxed">A 30-minute call. We ask about your workflow, your tools, where things break down. No pitch deck.</p>
+    </div>
 
-      <div class="bg-white p-6 shadow-sm border-t-4 border-primary">
-        <div class="flex justify-between items-start mb-4">
-          <span class="material-symbols-outlined text-secondary">map</span>
-          <span class="text-[9px] font-bold text-primary bg-surface-variant px-2 py-0.5">02 — MAP</span>
-        </div>
-        <h4 class="text-sm font-bold text-primary mb-2">We map and propose</h4>
-        <p class="text-xs text-secondary leading-relaxed">We document your current ops, identify what can be automated, and come back with a concrete plan and scope.</p>
+    <div class="p-6 border border-outline-variant/30 rounded-sm">
+      <div class="flex justify-between items-start mb-4">
+        <span class="material-symbols-outlined text-primary">map</span>
+        <span class="text-[9px] font-bold text-primary/40 tracking-widest">02</span>
       </div>
+      <h4 class="font-headline text-base text-primary mb-2">We map and propose</h4>
+      <p class="text-sm text-secondary leading-relaxed">We document your current ops, identify what can be automated, and come back with a concrete plan and scope.</p>
+    </div>
 
-      <div class="bg-white p-6 shadow-sm border-t-4 border-green-600">
-        <div class="flex justify-between items-start mb-4">
-          <span class="material-symbols-outlined text-secondary">rocket_launch</span>
-          <span class="text-[9px] font-bold text-green-700 bg-green-50 px-2 py-0.5">03 — BUILD</span>
-        </div>
-        <h4 class="text-sm font-bold text-primary mb-2">We build and deploy</h4>
-        <p class="text-xs text-secondary leading-relaxed">Agents and automations go live inside your existing tools. You review outcomes, not processes.</p>
+    <div class="p-6 border border-outline-variant/30 rounded-sm">
+      <div class="flex justify-between items-start mb-4">
+        <span class="material-symbols-outlined text-primary">rocket_launch</span>
+        <span class="text-[9px] font-bold text-primary/40 tracking-widest">03</span>
       </div>
+      <h4 class="font-headline text-base text-primary mb-2">We build and deploy</h4>
+      <p class="text-sm text-secondary leading-relaxed">Agents and automations go live inside your existing tools. You review outcomes, not processes.</p>
     </div>
   </div>
 </section>
