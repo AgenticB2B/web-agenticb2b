@@ -57,6 +57,10 @@
       .ticker-dot { animation: blink 1.6s ease-in-out infinite; }
 
       .nav-scrolled { background: rgba(251,249,245,0.85); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(0,19,52,0.08); }
+
+      details summary::-webkit-details-marker { display: none; }
+      details summary { list-style: none; }
+      details[open] summary .accordion-icon { transform: rotate(45deg); }
     </style>
   </head>
 
@@ -136,7 +140,8 @@
             </div>
           </div>
 
-          <div class="mt-20 grid md:grid-cols-2 gap-px bg-line border border-line">
+          <!-- Desktop: 2-col grid, all visible. Mobile: accordion -->
+          <div class="mt-20 hidden md:grid md:grid-cols-2 gap-px bg-line border border-line">
             <article class="group bg-paper p-8 lg:p-10 hover:bg-white transition-colors">
               <div class="flex items-start justify-between">
                 <span class="font-display text-sm text-muted tracking-widest">01</span>
@@ -179,6 +184,70 @@
               <h3 class="mt-8 font-display text-2xl lg:text-[1.75rem] tracking-tight">Your team is already using AI. You just don't know what they're pasting.</h3>
               <p class="mt-4 text-muted leading-relaxed">Your people already use free ChatGPT, free Gemini, free Perplexity. They paste customer data, contracts, vendor negotiations, financials — into tools designed to train on those inputs. You don't know what's leaving. You couldn't stop it if you wanted to, because you've given them nothing safer.</p>
             </article>
+          </div>
+
+          <!-- Mobile accordion -->
+          <div class="mt-20 md:hidden space-y-px bg-line border border-line" id="problems-accordion">
+            <details class="group bg-paper">
+              <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                <div class="flex items-center gap-4">
+                  <span class="font-display text-sm text-muted tracking-widest">01</span>
+                  <h3 class="font-display text-lg tracking-tight">The data you actually need isn't captured anywhere</h3>
+                </div>
+                <span class="accordion-icon text-muted text-xl transition-transform duration-200 group-open:rotate-45">+</span>
+              </summary>
+              <p class="px-6 pb-6 text-muted leading-relaxed">How long does an order take from receipt to dispatch? Which vendor is late 40% of the time? Which five customers make up 80% of your revenue? Your data is scattered across 4–5 systems that don't talk to each other.</p>
+            </details>
+            <details class="group bg-paper">
+              <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                <div class="flex items-center gap-4">
+                  <span class="font-display text-sm text-muted tracking-widest">02</span>
+                  <h3 class="font-display text-lg tracking-tight">Your customers chase you. Your vendors chase you.</h3>
+                </div>
+                <span class="accordion-icon text-muted text-xl transition-transform duration-200 group-open:rotate-45">+</span>
+              </summary>
+              <p class="px-6 pb-6 text-muted leading-relaxed">Your customers are begging to tell you what's wrong. They do it by calling and giving two abuses, or two compliments, to whoever picks up. Customers call asking "where's my order?". Vendors follow up on payments that are late. Every communication is manual, reactive, and late.</p>
+            </details>
+            <details class="group bg-paper">
+              <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                <div class="flex items-center gap-4">
+                  <span class="font-display text-sm text-muted tracking-widest">03</span>
+                  <h3 class="font-display text-lg tracking-tight">The vendor you trusted now owns you</h3>
+                </div>
+                <span class="accordion-icon text-muted text-xl transition-transform duration-200 group-open:rotate-45">+</span>
+              </summary>
+              <p class="px-6 pb-6 text-muted leading-relaxed">You commissioned custom software. Today the vendor is the only person who understands the codebase — and they're raising prices every year. Off-the-shelf tools almost fit, but the one feature you actually need isn't there, and nobody will build it. You can't leave. You can't stay. You pay.</p>
+            </details>
+            <details class="group bg-paper">
+              <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                <div class="flex items-center gap-4">
+                  <span class="font-display text-sm text-muted tracking-widest">04</span>
+                  <h3 class="font-display text-lg tracking-tight">You're becoming invisible to the buyers who matter most</h3>
+                </div>
+                <span class="accordion-icon text-muted text-xl transition-transform duration-200 group-open:rotate-45">+</span>
+              </summary>
+              <p class="px-6 pb-6 text-muted leading-relaxed">Large enterprises are already using procurement agents. Your pricing lives in PDF quotations. Your lead times are "we'll let you know." Your RFQ responses happen on email. You are becoming invisible to the buyers you need most — and you will never see the opportunities you're missing.</p>
+            </details>
+            <details class="group bg-paper">
+              <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                <div class="flex items-center gap-4">
+                  <span class="font-display text-sm text-muted tracking-widest">05</span>
+                  <h3 class="font-display text-lg tracking-tight">Intelligence evaporates the moment it's created</h3>
+                </div>
+                <span class="accordion-icon text-muted text-xl transition-transform duration-200 group-open:rotate-45">+</span>
+              </summary>
+              <p class="px-6 pb-6 text-muted leading-relaxed">You hired the smart operations head. You pay them well. Every decision they make, every correction they apply, every vendor they fix — happens in a conversation, and vapourises the second it ends. Over five years, that's crores of rupees of thinking that left no trace.</p>
+            </details>
+            <details class="group bg-paper">
+              <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                <div class="flex items-center gap-4">
+                  <span class="font-display text-sm text-muted tracking-widest">06</span>
+                  <h3 class="font-display text-lg tracking-tight">Your team is already using AI. You just don't know what they're pasting.</h3>
+                </div>
+                <span class="accordion-icon text-muted text-xl transition-transform duration-200 group-open:rotate-45">+</span>
+              </summary>
+              <p class="px-6 pb-6 text-muted leading-relaxed">Your people already use free ChatGPT, free Gemini, free Perplexity. They paste customer data, contracts, vendor negotiations, financials — into tools designed to train on those inputs. You don't know what's leaving. You couldn't stop it if you wanted to, because you've given them nothing safer.</p>
+            </details>
           </div>
         </div>
       </section>
@@ -301,7 +370,7 @@
             <div class="md:col-span-3">
               <div class="text-xs uppercase tracking-widest text-paper/50">Reach us</div>
               <ul class="mt-4 space-y-2 text-paper/80">
-                <li><a href="mailto:hello@agenticb2b.com" class="hover:text-paper">hello@agenticb2b.com</a></li>
+                <li><a href="mailto:hello@agenticb2b.tech" class="hover:text-paper">hello@agenticb2b.tech</a></li>
               </ul>
             </div>
           </div>
